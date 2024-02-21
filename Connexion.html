@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Loquiver</title>
+    <link rel="stylesheet" href="Connexion.css">
+</head>
+<body>
+    <div class="login-container">
+      <h1>Loquiver</h1>
+      <div class="background-image"></div>
+      <div class="login-box">
+        <h2>Connexion</h2>
+        <form>
+          <div class="input-group">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" required>
+          </div>
+          <button type="submit">Se connecter</button>
+        </form>
+        <p class="signup-link">Pas de compte ? <a href="Inscription.html">Inscrivez-vous</a></p>
+      </div>
+    </div>
+  
+    <script>
+      const backgroundImg = document.querySelector('.background-image');
+      const loginBox = document.querySelector('.login-box');
+      
+      window.addEventListener('load', () => {
+        backgroundImg.style.animation = 'fade-in 2s ease-in-out forwards';
+        loginBox.style.animation = 'slide-up 1s ease-in-out forwards';
+      });
+    </script>
+  </body>
+</html>

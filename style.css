@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    display: flex;
+    background-image: url('https://cdn.discordapp.com/attachments/1064217681638719488/1176283782232420392/logimage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.navbar a {
+    color: #efefef;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+
+.navbar .nav-links ul {
+    display: flex;
+    font-size: 1.5em;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 30px;
+}

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* ajout de cette ligne pour centrer les éléments verticalement */
+  height: 100vh;
+  background-color: #111;
+}
+
+.background-image {
+  background-image: url('https://cdn.discordapp.com/attachments/1064217681638719488/1176283782232420392/logimage.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  animation: fade-in 2s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.register-box {
+  background-color: #222;
+  border-radius: 20px;
+  padding: 60px 70px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: slide-up 1s ease-in-out forwards;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h1,
+h2 {
+  color: #FEFEFE;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #fff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005cbf;
+}
+
+.signup-link {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #007bff;
+}
